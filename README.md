@@ -1,71 +1,56 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19755520&assignment_repo_type=AssignmentRepo)
-# React.js and Tailwind CSS Assignment
+# 🧩 React + Vite Frontend Project: Task Manager & API Explorer
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A modern, responsive React application built with **Vite** and styled using **Tailwind CSS**. It includes a Task Manager with full CRUD functionality and an API Explorer that fetches and displays public data with filtering, pagination, and search features.
 
-## Assignment Overview
+## 📸 Live Demo
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+🌐 [🔗 View the deployed app here](https://your-app-url.vercel.app)  
+_(Replace with your actual deployed URL)_
 
-## Getting Started
+---
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+## 🚀 Features
 
-## Files Included
+### ✅ Task Manager
+- Add, complete, delete, and filter tasks
+- Data persistence using `localStorage`
+- Theme support (Light/Dark mode)
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+### ✅ API Explorer
+- Fetches posts from JSONPlaceholder
+- Includes search, pagination, and loading/error states
 
-## Requirements
+### ✅ UI Components
+- Reusable `Button`, `Card`, `Navbar`, `Footer`, `Layout`
+- Built with Tailwind utility classes and responsive design
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+---
 
-## Project Structure
+## 🏗️ Project Structure
 
-```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
-```
-
-## Submission
-
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
-
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
-
-## Resources
-
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+```bash
+my-front-end-app/
+├── public/
+├── src/
+│   ├── assets/              # Static files (images, logos)
+│   ├── components/          # Reusable UI components
+│   │   ├── Button.jsx
+│   │   ├── Card.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   └── Layout.jsx
+│   ├── context/             # ThemeContext
+│   ├── hooks/               # Custom hooks (e.g., useLocalStorage)
+│   ├── pages/               # Page components
+│   │   ├── Home.jsx
+│   │   ├── Tasks.jsx
+│   │   └── APIExplorer.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── vite.config.js
