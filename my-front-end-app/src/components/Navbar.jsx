@@ -1,14 +1,13 @@
-import { Link } from 'react-router-dom'
-
 export default function Navbar() {
     return (
-    <nav className="bg-blue-600 p-4 text-white flex justify-between">
-        <div className="font-bold">MyApp</div>
-        <div className="space-x-4">
-        <Link to="/">Home</Link>
-        <Link to="/tasks">Tasks</Link>
-        <Link to="/api">API</Link>
-        </div>
-    </nav>
-    )
+        <header className="bg-white shadow-sm border-b mb-6">
+            <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+                <h1 className="text-xl font-bold text-gray-800">My Tasks App</h1>
+                <nav className="space-x-4">
+                    <a href="#" className="text-gray-600 hover:text-blue-500">Home</a>
+                    <a href="#" className="text-gray-600 hover:text-blue-500">About</a>
+                </nav>
+            </div>
+        </header>
+    );
 }

@@ -1,56 +1,12 @@
-# 🧩 React + Vite Frontend Project: Task Manager & API Explorer
+# React + Vite
 
-A modern, responsive React application built with **Vite** and styled using **Tailwind CSS**. It includes a Task Manager with full CRUD functionality and an API Explorer that fetches and displays public data with filtering, pagination, and search features.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 📸 Live Demo
+Currently, two official plugins are available:
 
-🌐 [🔗 View the deployed app here](https://your-app-url.vercel.app)  
-_(Replace with your actual deployed URL)_
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
----
+## Expanding the ESLint configuration
 
-## 🚀 Features
-
-### ✅ Task Manager
-- Add, complete, delete, and filter tasks
-- Data persistence using `localStorage`
-- Theme support (Light/Dark mode)
-
-### ✅ API Explorer
-- Fetches posts from JSONPlaceholder
-- Includes search, pagination, and loading/error states
-
-### ✅ UI Components
-- Reusable `Button`, `Card`, `Navbar`, `Footer`, `Layout`
-- Built with Tailwind utility classes and responsive design
-
----
-
-## 🏗️ Project Structure
-
-```bash
-my-front-end-app/
-├── public/
-├── src/
-│   ├── assets/              # Static files (images, logos)
-│   ├── components/          # Reusable UI components
-│   │   ├── Button.jsx
-│   │   ├── Card.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── Footer.jsx
-│   │   └── Layout.jsx
-│   ├── context/             # ThemeContext
-│   ├── hooks/               # Custom hooks (e.g., useLocalStorage)
-│   ├── pages/               # Page components
-│   │   ├── Home.jsx
-│   │   ├── Tasks.jsx
-│   │   └── APIExplorer.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── .gitignore
-├── index.html
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-└── vite.config.js
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
