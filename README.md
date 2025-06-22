@@ -1,56 +1,64 @@
-# 🧩 React + Vite Frontend Project: Task Manager & API Explorer
-
-A modern, responsive React application built with **Vite** and styled using **Tailwind CSS**. It includes a Task Manager with full CRUD functionality and an API Explorer that fetches and displays public data with filtering, pagination, and search features.
+📝 My Tasks App
+A simple and responsive task management app built with React and styled using Tailwind CSS + ShadCN/UI components. This app allows users to add, toggle, and persist tasks using local storage.
 
 ## 📸 Live Demo
 
-🌐 [🔗 View the deployed app here](https://your-app-url.vercel.app)  
-_(Replace with your actual deployed URL)_
+🌐 [🔗 View the deployed app here](https://your-app-url.vercel.app)
 
----
+📁 Project Structure
+src/
+├── assets/                # Static files (images, etc.)
+├── components/
+│   ├── ui/                # ShadCN UI components
+│   │   ├── button.jsx
+│   │   └── card.jsx
+│   ├── Footer.jsx         # Footer component
+│   ├── Navbar.jsx         # Navigation bar component
+│   ├── Task.jsx           # Individual task display
+│   └── TaskForm.jsx       # Form to add new tasks
+├── lib/
+│   └── utils.js           # Utility functions
+├── App.jsx                # Main app component
+├── App.css                # App-specific styles
+├── index.css              # Global styles
+├── main.jsx               # React entry point
 
-## 🚀 Features
+🚀 Features
+✅ Add new tasks
 
-### ✅ Task Manager
-- Add, complete, delete, and filter tasks
-- Data persistence using `localStorage`
-- Theme support (Light/Dark mode)
+✅ Mark tasks as done / undo
 
-### ✅ API Explorer
-- Fetches posts from JSONPlaceholder
-- Includes search, pagination, and loading/error states
+✅ Automatically save tasks to localStorage
 
-### ✅ UI Components
-- Reusable `Button`, `Card`, `Navbar`, `Footer`, `Layout`
-- Built with Tailwind utility classes and responsive design
+✅ Responsive layout
 
----
+✅ Navigation bar and footer
 
-## 🏗️ Project Structure
+✅ Styled with ShadCN UI components and Tailwind CSS
 
-```bash
-my-front-end-app/
-├── public/
-├── src/
-│   ├── assets/              # Static files (images, logos)
-│   ├── components/          # Reusable UI components
-│   │   ├── Button.jsx
-│   │   ├── Card.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── Footer.jsx
-│   │   └── Layout.jsx
-│   ├── context/             # ThemeContext
-│   ├── hooks/               # Custom hooks (e.g., useLocalStorage)
-│   ├── pages/               # Page components
-│   │   ├── Home.jsx
-│   │   ├── Tasks.jsx
-│   │   └── APIExplorer.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── .gitignore
-├── index.html
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-└── vite.config.js
+📦 Installation
+1. Clone the repository
+git clone https://github.com/PLP-MERN-Stack-Development/week-3-react-js-assignment-RebMir.git
+cd my-front-end-app
+
+2. Install dependencies using pnpm
+pnpm install
+
+3. Start the development server
+pnpm run dev
+
+📂 Dependencies
+- React
+
+- Vite
+
+- Tailwind CSS
+
+- ShadCN UI
+
+- pnpm
+
+✍️ Author
+Rebeccah Miruka
+Feel free to connect or reach out for feedback or collaboration.
+
