@@ -37,6 +37,10 @@ export default function App() {
         setTasks(curr => [newTask, ...curr]);
     };
 
+    const deleteTask = (id) => {
+        setTasks(curr => curr.filter(t => t.id !== id));
+    };
+
     return (
         <div className="min-h-screen bg-gray-100 p-6">
           <Navbar /> {/* Navbar component */}
@@ -48,7 +52,9 @@ export default function App() {
 
             {tasks.length ?(
               tasks.map(task => (
-                <Task key={task.id} {...task} onToggle={toggleTask} />
+                <Task key={task.id} {...task} 
+                onToggle={toggleTask} 
+                onDelete={deleteTask}  />
             ))
             ) : (
                 <p className="text-gray-500">No tasks yet</p>
