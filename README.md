@@ -3,7 +3,7 @@ A simple and responsive task management app built with React and styled using Ta
 
 ## 📸 Live Demo
 
-🌐 [🔗 View the deployed app here](https://stalwart-blancmange-d8164e.netlify.app/)
+🌐 [🔗 View the deployed app here](https://earnest-sorbet-b66b6f.netlify.app/)
 
 ## 📁 Project Structure
 
